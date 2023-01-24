@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="130.311">
+<testcase classname="Verification of Login page functionality" name="To validate if the user has not entered any credentials." time="18.023">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User Clicks on login button.............................................passed
+Then Invalid request message should appear..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if user has entered only username" time="10.321">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User enters only username with <"ashutoshp9697@gmailcom">...............passed
+And User Clicks on login button.............................................passed
+Then Invalid request message should appear..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if user has entered only password" time="12.526">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User enters only password with <"Patil@123">............................passed
+And User Clicks on login button.............................................passed
+Then Invalid request message should appear..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verification of Login page functionality" name="To validate if the user has entered the valid credentials and redirection happens to the home page." time="12.368">
+<system-out><![CDATA[Given User is on Login page.................................................passed
+And User enters username with <"xyz1234@gmail.com">.........................passed
+And User enters password with <"Patil@123">.................................passed
+And User Clicks on login button.............................................passed
+Then User is logged in......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I want to check account details" name="To see account overview" time="15.82">
+<system-out><![CDATA[Given I navigate to the login page..........................................passed
+When I submit username and password.........................................passed
+Then I should be logged in..................................................passed
+Given User is on the home page..............................................passed
+When User clicks on drop down...............................................passed
+And selects a account overview..............................................passed
+Then User should get the results............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I want to check account details" name="To update the profile" time="18.413">
+<system-out><![CDATA[Given I navigate to the login page..........................................passed
+When I submit username and password.........................................passed
+Then I should be logged in..................................................passed
+Given User should be on the home page.......................................passed
+And Update info is selected.................................................passed
+When User clicks on contact field <"9098866543">............................passed
+Then Profile is updated.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I want to check account details" name="To transfer funds" time="12.511">
+<system-out><![CDATA[Given I navigate to the login page..........................................passed
+When I submit username and password.........................................passed
+Then I should be logged in..................................................passed
+When User clicks on amount <"551546">.......................................passed
+Then Amount should get transferd............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I want to check account details" name="To request loan" time="14.982">
+<system-out><![CDATA[Given I navigate to the login page..........................................passed
+When I submit username and password.........................................passed
+Then I should be logged in..................................................passed
+When User selects the loan amount <"5000000">...............................passed
+And User selects the downpayment amount <"5000">............................passed
+Then Loan request gets submitted............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="I want to check account details" name="To logout from website" time="14.937">
+<system-out><![CDATA[Given I navigate to the login page..........................................passed
+When I submit username and password.........................................passed
+Then I should be logged in..................................................passed
+When User clicks on the logout button.......................................passed
+Then User should be logged out..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
